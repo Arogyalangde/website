@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Automobile Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to our Automobile Website</h1>
+  </header>
+
+  <main>
+    <section id="car-list">
+      <h2>Avalible car</h2>
+      <div class="car-card">
+        <img src="C:\Users\user\OneDrive\Desktop\car1.jpg" alt="Car 1">
+        <h3>Lamborghini</h3>
+        <p>Lamborghini cars price range is Rs 3.21 Cr to Rs 4.22.Lamborghini's production facility and headquarters are located in Sant'Agata Bolognese, Italy .its top speed is 350 km/h (217.5 mph). the company is owned by the Volkswagen Group through its subsidiary Audi. Automobili Lamborghini S.p.A.</p>
+      </div>
+
+      <div class="car-card">
+        <img src="C:\Users\user\OneDrive\Desktop\audi.jpg" alt="Car 2">
+        <h3>audi car</h3>
+        <p>Audi cars price range is Rs 43.85 Lakh to Rs 2.22 Cr. Audi AG is a German automotive manufacturer of luxury vehicles headquartered in  Germany.
+            
+            The company name is based on the Latin translation of the surname of the founder, August Horch. .Audi, along with German brands BMW and Mercedes-Benz, is among the best-selling luxury automobile brands in the world..</p>
+      </div>
+
+      <div class="car-card">
+        <img src="C:\Users\user\OneDrive\Desktop\BNW.jpg" alt="Car 3">
+        <h3>BMW Car</h3>
+        <p>The price of BMW cars in India is Rs. 43.50 Lakh. Bayerische Motoren Werke AG, abbreviated as BMW, is a German multinational manufacturer of luxury vehicles and motorcycles headquartered in Munich, Bavaria, Germany. The company was founded in 1916 as a manufacturer of aircraft engines, which it produced from 1917 to 1918 and again from 1933 to 1945.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+
+style.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hotpink;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    margin: 10px;
+  }
+  
+  #car-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .car-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .car-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .car-card h3 {
+    margin-top: 10px;
+  }
+  
+  .car-card p {
+    margin-top: 5px;
+  }
+  
